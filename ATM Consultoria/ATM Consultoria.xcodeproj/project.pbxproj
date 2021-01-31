@@ -15,6 +15,7 @@
 		D4DF00AA25C628CC00F73A1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DF00A825C628CC00F73A1C /* LaunchScreen.storyboard */; };
 		D4DF00B525C6430600F73A1C /* ClientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF00B425C6430600F73A1C /* ClientController.swift */; };
 		D4DF00BB25C652A000F73A1C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF00BA25C652A000F73A1C /* ContactController.swift */; };
+		D4DF00BE25C6581D00F73A1C /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF00BD25C6581D00F73A1C /* ServiceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D4DF00AB25C628CC00F73A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4DF00B425C6430600F73A1C /* ClientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientController.swift; sourceTree = "<group>"; };
 		D4DF00BA25C652A000F73A1C /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		D4DF00BD25C6581D00F73A1C /* ServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				D4DF00A125C628C700F73A1C /* MainController.swift */,
 				D4DF00B425C6430600F73A1C /* ClientController.swift */,
 				D4DF00BA25C652A000F73A1C /* ContactController.swift */,
+				D4DF00BD25C6581D00F73A1C /* ServiceController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4DF00A225C628C700F73A1C /* MainController.swift in Sources */,
+				D4DF00BE25C6581D00F73A1C /* ServiceController.swift in Sources */,
 				D4DF00BB25C652A000F73A1C /* ContactController.swift in Sources */,
 				D4DF009E25C628C700F73A1C /* AppDelegate.swift in Sources */,
 				D4DF00B525C6430600F73A1C /* ClientController.swift in Sources */,
