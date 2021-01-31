@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7tu-Ss-iNI">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Controller-->
+        <!--Menus-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainController" customModule="ATM_Consultoria" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,6 +35,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPN-aI-aVO" userLabel="Button Client">
                                                         <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="121"/>
                                                         <state key="normal" image="menu_cliente"/>
+                                                        <connections>
+                                                            <segue destination="uN6-hD-Jnd" kind="show" id="2M3-4H-UZy"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfZ-No-nWb" userLabel="Button Contact">
                                                         <rect key="frame" x="136.66666666666669" y="0.0" width="128.33333333333331" height="121"/>
@@ -68,13 +71,114 @@
                             <constraint firstItem="L8H-rw-uzO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kAV-cW-Y0r"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Menus" id="uTU-po-pIC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876.81159420289862" y="63.586956521739133"/>
+        </scene>
+        <!--Clientes-->
+        <scene sceneID="Ivs-ao-OOE">
+            <objects>
+                <viewController id="uN6-hD-Jnd" customClass="ClientController" customModule="ATM_Consultoria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j4p-fE-azh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uMM-GA-Yqe" userLabel="Stack View Container">
+                                <rect key="frame" x="10" y="54" width="394" height="313.33333333333331"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sro-Az-sFi" userLabel="Stack View Head">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detalhe_cliente" translatesAutoresizingMaskIntoConstraints="NO" id="lBk-xi-3TU" userLabel="Image View Client">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="ToI-XQ-SIb"/>
+                                                    <constraint firstAttribute="height" constant="100" id="lnd-w0-4Le"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYp-JZ-vPY" userLabel="Label Title">
+                                                <rect key="frame" x="100" y="38" width="294" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.7572003007" green="0.80449587109999998" blue="0.22567814589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cliente1" translatesAutoresizingMaskIntoConstraints="NO" id="fqd-F0-Vyu" userLabel="Cliente 1">
+                                        <rect key="frame" x="0.0" y="107" width="394" height="49"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0E-4K-WJN" userLabel="Client 1 Description">
+                                        <rect key="frame" x="0.0" y="163" width="394" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cliente2" translatesAutoresizingMaskIntoConstraints="NO" id="RRu-VJ-AgO" userLabel="Cliente 2">
+                                        <rect key="frame" x="0.0" y="210.66666666666669" width="394" height="55"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wot-Bd-mYe" userLabel="Client 2 Description">
+                                        <rect key="frame" x="0.0" y="272.66666666666669" width="394" height="40.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="C0E-4K-WJN" secondAttribute="trailing" id="Meb-xE-3Wp"/>
+                                    <constraint firstItem="C0E-4K-WJN" firstAttribute="leading" secondItem="uMM-GA-Yqe" secondAttribute="leading" id="at8-wg-hNr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZsZ-g0-PCi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uMM-GA-Yqe" firstAttribute="leading" secondItem="ZsZ-g0-PCi" secondAttribute="leading" constant="10" id="eCx-LT-2Ch"/>
+                            <constraint firstItem="uMM-GA-Yqe" firstAttribute="top" secondItem="ZsZ-g0-PCi" secondAttribute="top" constant="10" id="tvl-TH-6f6"/>
+                            <constraint firstItem="ZsZ-g0-PCi" firstAttribute="trailing" secondItem="uMM-GA-Yqe" secondAttribute="trailing" constant="10" id="xin-g7-qAI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Clientes" id="evM-OC-ZdM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJe-WP-QiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cliente1" id="cvk-ws-mdb">
+                    <rect key="frame" x="0.0" y="0.0" width="394" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i7j-e1-9Fs" userLabel="Client 1 Description">
+                    <rect key="frame" x="0.0" y="0.0" width="394" height="40.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </objects>
+            <point key="canvasLocation" x="1881.1594202898552" y="-376.63043478260875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OHA-zR-9AX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7tu-Ss-iNI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fs4-kT-N0t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="O2F-w5-y7B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txN-Qi-gYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-30.434782608695656" y="63.586956521739133"/>
         </scene>
     </scenes>
     <resources>
+        <image name="cliente1" width="111" height="49"/>
+        <image name="cliente2" width="111" height="55"/>
+        <image name="detalhe_cliente" width="85" height="90"/>
         <image name="logo" width="266" height="96"/>
         <image name="menu_cliente" width="115" height="121"/>
         <image name="menu_contato" width="115" height="121"/>
