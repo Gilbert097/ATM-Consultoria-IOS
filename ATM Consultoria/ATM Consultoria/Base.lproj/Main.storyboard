@@ -55,6 +55,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qG-C6-ueC" userLabel="Button Company">
                                                         <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="121"/>
                                                         <state key="normal" image="menu_empresa"/>
+                                                        <connections>
+                                                            <segue destination="Hil-hf-qRj" kind="show" id="Qmz-A2-p3M"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow2-nx-qXe" userLabel="Button Service">
                                                         <rect key="frame" x="136.66666666666669" y="0.0" width="128.33333333333331" height="121"/>
@@ -141,6 +144,59 @@
             </objects>
             <point key="canvasLocation" x="1775" y="29"/>
         </scene>
+        <!--Empresa-->
+        <scene sceneID="dE6-q7-hLL">
+            <objects>
+                <viewController id="Hil-hf-qRj" customClass="CompanyController" customModule="ATM_Consultoria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9sq-AF-114">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hIu-GH-DgM" userLabel="Stack View Container">
+                                <rect key="frame" x="10" y="44" width="374" height="391.33333333333331"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bew-p2-tf4" userLabel="Stack View Head">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detalhe_empresa" translatesAutoresizingMaskIntoConstraints="NO" id="29F-U7-3BV" userLabel="Image View Contact">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Q0w-ms-283"/>
+                                                    <constraint firstAttribute="width" constant="100" id="bgu-Qh-rzE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empresa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZo-dH-EPa" userLabel="Label Title">
+                                                <rect key="frame" x="100" y="38" width="274" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.93621200319999998" green="0.48881763220000002" blue="0.3072620928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXw-i2-1s6" userLabel="Label Description">
+                                        <rect key="frame" x="0.0" y="107" width="374" height="284.33333333333331"/>
+                                        <mutableString key="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WTT-fm-1zT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hIu-GH-DgM" firstAttribute="leading" secondItem="WTT-fm-1zT" secondAttribute="leading" constant="10" id="LDd-1k-WrQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hIu-GH-DgM" secondAttribute="trailing" constant="10" id="fZg-bW-PyG"/>
+                            <constraint firstItem="hIu-GH-DgM" firstAttribute="top" secondItem="9sq-AF-114" secondAttribute="topMargin" id="lAm-Ma-owj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Empresa" id="0mh-q4-Del"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVt-9H-P6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="841"/>
+        </scene>
         <!--Serviços-->
         <scene sceneID="qAf-9V-iXd">
             <objects>
@@ -170,13 +226,13 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Consultoria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cI9-Cr-teg" userLabel="Label Phone">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Consultoria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cI9-Cr-teg" userLabel="Label Consultoria">
                                         <rect key="frame" x="0.0" y="107" width="394" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Processos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ne8-3Q-sBf" userLabel="Label E-mail">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Processos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ne8-3Q-sBf" userLabel="Label  Processos">
                                         <rect key="frame" x="0.0" y="134.33333333333334" width="394" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -269,7 +325,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i7j-e1-9Fs" userLabel="Client 1 Description">
-                    <rect key="frame" x="0.0" y="0.0" width="394" height="40.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="394" height="40.666666666666664"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -302,6 +358,7 @@
         <image name="cliente2" width="111" height="55"/>
         <image name="detalhe_cliente" width="85" height="90"/>
         <image name="detalhe_contato" width="112" height="118"/>
+        <image name="detalhe_empresa" width="85" height="79"/>
         <image name="detalhe_servico" width="85" height="79"/>
         <image name="logo" width="266" height="96"/>
         <image name="menu_cliente" width="115" height="121"/>

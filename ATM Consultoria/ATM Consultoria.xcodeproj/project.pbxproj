@@ -16,6 +16,7 @@
 		D4DF00B525C6430600F73A1C /* ClientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF00B425C6430600F73A1C /* ClientController.swift */; };
 		D4DF00BB25C652A000F73A1C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF00BA25C652A000F73A1C /* ContactController.swift */; };
 		D4DF00BE25C6581D00F73A1C /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF00BD25C6581D00F73A1C /* ServiceController.swift */; };
+		D4DF00C225C65AB200F73A1C /* CompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF00C125C65AB200F73A1C /* CompanyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D4DF00B425C6430600F73A1C /* ClientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientController.swift; sourceTree = "<group>"; };
 		D4DF00BA25C652A000F73A1C /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 		D4DF00BD25C6581D00F73A1C /* ServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
+		D4DF00C125C65AB200F73A1C /* CompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				D4DF00B425C6430600F73A1C /* ClientController.swift */,
 				D4DF00BA25C652A000F73A1C /* ContactController.swift */,
 				D4DF00BD25C6581D00F73A1C /* ServiceController.swift */,
+				D4DF00C125C65AB200F73A1C /* CompanyController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				D4DF00BB25C652A000F73A1C /* ContactController.swift in Sources */,
 				D4DF009E25C628C700F73A1C /* AppDelegate.swift in Sources */,
 				D4DF00B525C6430600F73A1C /* ClientController.swift in Sources */,
+				D4DF00C225C65AB200F73A1C /* CompanyController.swift in Sources */,
 				D4DF00A025C628C700F73A1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
