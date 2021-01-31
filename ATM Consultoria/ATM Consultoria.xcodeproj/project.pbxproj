@@ -14,6 +14,7 @@
 		D4DF00A725C628CC00F73A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4DF00A625C628CC00F73A1C /* Assets.xcassets */; };
 		D4DF00AA25C628CC00F73A1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DF00A825C628CC00F73A1C /* LaunchScreen.storyboard */; };
 		D4DF00B525C6430600F73A1C /* ClientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF00B425C6430600F73A1C /* ClientController.swift */; };
+		D4DF00BB25C652A000F73A1C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DF00BA25C652A000F73A1C /* ContactController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D4DF00A925C628CC00F73A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4DF00AB25C628CC00F73A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4DF00B425C6430600F73A1C /* ClientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientController.swift; sourceTree = "<group>"; };
+		D4DF00BA25C652A000F73A1C /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				D4DF00A125C628C700F73A1C /* MainController.swift */,
 				D4DF00B425C6430600F73A1C /* ClientController.swift */,
+				D4DF00BA25C652A000F73A1C /* ContactController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4DF00A225C628C700F73A1C /* MainController.swift in Sources */,
+				D4DF00BB25C652A000F73A1C /* ContactController.swift in Sources */,
 				D4DF009E25C628C700F73A1C /* AppDelegate.swift in Sources */,
 				D4DF00B525C6430600F73A1C /* ClientController.swift in Sources */,
 				D4DF00A025C628C700F73A1C /* SceneDelegate.swift in Sources */,

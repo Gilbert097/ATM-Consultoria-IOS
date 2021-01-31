@@ -43,6 +43,9 @@
                                                         <rect key="frame" x="136.66666666666669" y="0.0" width="128.33333333333331" height="121"/>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                         <state key="normal" image="menu_contato"/>
+                                                        <connections>
+                                                            <segue destination="MES-Km-fpE" kind="show" id="rsc-ih-R0K"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -76,6 +79,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="876.81159420289862" y="63.586956521739133"/>
+        </scene>
+        <!--Contatos-->
+        <scene sceneID="jdV-5J-01p">
+            <objects>
+                <viewController id="MES-Km-fpE" customClass="ContactController" customModule="ATM_Consultoria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="14h-Wr-YNq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="xeM-cS-knp" userLabel="Stack View Container">
+                                <rect key="frame" x="10" y="44" width="404" height="154.66666666666666"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wWd-Sf-1GG" userLabel="Stack View Head">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detalhe_contato" translatesAutoresizingMaskIntoConstraints="NO" id="CLd-4i-jra" userLabel="Image View Contact">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="2pD-dS-hGo"/>
+                                                    <constraint firstAttribute="width" constant="100" id="MxH-Ih-1U5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contatos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WT-2d-qvM" userLabel="Label Title">
+                                                <rect key="frame" x="100" y="38" width="304" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.42312639950000003" green="0.76520818469999996" blue="0.58133941889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel (11) 3456-1267" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMO-3z-nUK" userLabel="Label Phone">
+                                        <rect key="frame" x="0.0" y="107" width="404" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail: atm@atm.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lh-nU-shR" userLabel="Label E-mail">
+                                        <rect key="frame" x="0.0" y="134.33333333333334" width="404" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GVF-d8-x3i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GVF-d8-x3i" firstAttribute="trailing" secondItem="xeM-cS-knp" secondAttribute="trailing" id="02J-l7-bSW"/>
+                            <constraint firstItem="xeM-cS-knp" firstAttribute="top" secondItem="GVF-d8-x3i" secondAttribute="top" id="dxu-en-L2q"/>
+                            <constraint firstItem="xeM-cS-knp" firstAttribute="leading" secondItem="GVF-d8-x3i" secondAttribute="leading" constant="10" id="r15-w8-rCs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contatos" id="6kC-ne-LNW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTj-RD-uAm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="29"/>
         </scene>
         <!--Clientes-->
         <scene sceneID="Ivs-ao-OOE">
@@ -154,7 +215,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </objects>
-            <point key="canvasLocation" x="1881.1594202898552" y="-376.63043478260875"/>
+            <point key="canvasLocation" x="1768" y="-668"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OHA-zR-9AX">
@@ -179,6 +240,7 @@
         <image name="cliente1" width="111" height="49"/>
         <image name="cliente2" width="111" height="55"/>
         <image name="detalhe_cliente" width="85" height="90"/>
+        <image name="detalhe_contato" width="112" height="118"/>
         <image name="logo" width="266" height="96"/>
         <image name="menu_cliente" width="115" height="121"/>
         <image name="menu_contato" width="115" height="121"/>
